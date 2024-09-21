@@ -1,0 +1,3 @@
+python main.py --dataset ChestCancer --attack_method Foolbox --img_size 64 --deg Demo --at_threshold 50  --deg_scale 4 --gpulist 0 -pptes -upptes --sampling 50
+
+python main.py --dataset ChestCancer --attack_method Foolbox --img_size 64 --deg Demo --at_threshold 50  --deg_scale 4 --gpulist 0 -pctes -pptes -upctes -upptes --sampling 50

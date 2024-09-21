@@ -1,0 +1,5 @@
+pur/
+pur_splited/
+datasets/
+*_pretrain/
+**/__pycache__/
