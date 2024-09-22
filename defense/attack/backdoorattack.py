@@ -35,9 +35,8 @@ def gen_grid(height, k):
     return identity_grid, noise_grid
 
 def process_dataset(args):
-
-    model = CNNModel(4)
-
+    model = CNNModel(args.classes)
+    
     trainset = None
     testset = None
 
@@ -229,7 +228,7 @@ def process_dataset(args):
 
 
 def clean_ins(args, clean_train, clean_test):
-        model = CNNModel(4)
+        model = CNNModel(args.classes)
     
         clean_instance = bb.core.Clean(
             train_dataset = clean_train,
@@ -244,7 +243,7 @@ def clean_ins(args, clean_train, clean_test):
         return clean_instance
     
 def purified_ins(args, clean_train, clean_test, purified_train, purified_test):
-        model = CNNModel(4)
+        model = CNNModel(args.classes)
     
         purified_instance = bb.core.Purified(
             train_dataset =clean_train,

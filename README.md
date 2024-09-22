@@ -1,3 +1,8 @@
+This code is based on 
+[ZIP](https://github.com/sycny/ZIP.git)
+
+The Diffusion is trained using [NVlabs/edm](https://github.com/NVlabs/edm)
+
 # Installation
 
 ## Requirements
@@ -10,7 +15,7 @@ pip install -r requirements.txt
 
 ## Purify
 
-python main.py --dataset ChestCancer --attack_method Foolbox --img_size 64 --deg Demo --at_threshold 50  --deg_scale 4 --gpulist 0 -pctes -pptes -upctes -upptes --sampling 50 --foolbox_attack PGD
+python main.py --dataset KidneyCancer --attack_method Foolbox --img_size 64 --deg Demo --at_threshold 50  --deg_scale 4 --gpulist 0 -pctes -pptes -upctes -upptes --sampling 50 --classes 2
 
 ## Classification
 
