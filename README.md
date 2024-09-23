@@ -88,3 +88,7 @@ Python 3.12
     python classification.py --root /home/chaunm/Projects/dataset/medical-scan-classification 
 
 `root`: dataset directory.
+
+# Acknowledgement
+
+We want to give our thanks to the authors of [ZIP](https://github.com/sycny/ZIP) for their backdoor defense framework, [edm](https://github.com/NVlabs/edm) for their diffusion training, and [FoolBox](https://github.com/bethgelab/foolbox) for their adversarial attacks library.
